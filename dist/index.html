@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <title>Web Dev Challenge 22</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <div class="minibar">
-        <div class="contact">298 844 0398 contact@smily.com</div>
+        <div class="contact">
+            <i class="material-icons">phone</i> 298 844 0398
+            <i class="material-icons">email</i> contact@smily.com
+            </div>
         <div class="social_icons">
             <ul>
                 <li class="social_icon">
@@ -34,6 +38,7 @@
     <header>
         <img class="logo" src="images/logo.png" alt="smiley_logo">
         <nav>
+           <div class="burger"><span></span></div>
             <ul>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -46,12 +51,14 @@
             </ul>
         </nav>
     </header>
-    <div class="hero">
+    <section class="hero">
         <h1><span>Smiley </span>Creative MULTI-PURPOSE</h1>
         <p>Primis vocent comprehensam an vix qui ferri alterum appareat id.</p>
-        <a class="button" href="#">learn more</a>
-    </div>
-    <div id="services">
+        <a class="button" href="#">
+            learn more <i class="material-icons">arrow_forward</i>
+        </a>
+    </section>
+    <section id="services">
         <div class="container">
             <ul>
                 <li>
@@ -90,8 +97,8 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div id="offer" class="container">
+    </section>
+    <section id="offer" class="container">
         <ul>
             <li>
                 <div>
@@ -165,19 +172,19 @@
                 </div>
             </li>
         </ul>
-    </div>
-    <div id="skills">
+    </section>
+    <section id="skills">
         <div class="border">
             <div class="play_button">
                 <div class="play">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="portfolio" class="containesr">
-        <p class="main">Portfolio</p>
-        <p class="secondary">Lorem ipsum dolor sit amet consecte adip scn elit sit</p>
+    <section id="portfolio" class="container">
+        <h2 class="heading_dark">Portfolio</h2>
+        <h3 class="heading_dark">Lorem ipsum dolor sit amet consecte adip scn elit sit</h3>
         <ul class="categories">
             <li class="button"><a href="">All</a></li>
             <li><a href="">Photography</a></li>
@@ -286,59 +293,61 @@
                 </div>
             </li>
         </ul>
-        <a class="button" href="#">learn more</a>
-    </div>
-    <div id="team">
+        <a class="button" href="#">
+            learn more <i class="material-icons">arrow_forward</i>
+        </a>
+    </section>
+    <section id="team">
         <div class="container">
-            <p class="primary">The team</p>
-            <p class="secondary">Lorem ipsum dolor sit amet consecte adip scn elit sit secte </p>
+            <h2 class="heading_bright">The team</h2>
+            <h3 class="heading_bright">Lorem ipsum dolor sit amet consecte adip scn elit sit secte </h3>
 
             <ul>
                 <li class="carousel_item">
                     <div>
                         <img src="images/team_1.jpg" alt=""></div>
-                    <div>
+                    <div class="team_details">
                         <p class="name">Faridul Haque</p>
                         <p class="proffesion">Graphic Designer</p>
                         <ul class="socials">
                             <li>
-                                <a class="facebook" href=""></a>
+                                <a class="facebook" href=""><img src="images/fb.png" alt=""></a>
                             </li>
                             <li>
-                                <a class="twitter" href=""></a>
+                                <a class="twitter" href=""><img src="images/tw.png" alt=""></a>
                             </li>
                             <li>
-                                <a class="dribble" href=""></a>
+                                <a class="dribble" href=""><img src="images/dr.png" alt=""></a>
                             </li>
                             <li>
-                                <a class="Be" href=""></a>
+                                <a class="Be" href=""><img src="images/be.png" alt=""></a>
                             </li>
                             <li>
-                                <a class="p" href=""></a>
+                                <a class="p" href=""><img src="images/pi.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="carousel_item">
+                <li class="carousel_item active">
                     <div><img src="images/team_2.jpg" alt=""></div>
-                    <div>
+                    <div class="team_details">
                         <p class="name">Angelina Fuad jolie</p>
                         <p class="proffesion">Fasion Designer</p>
                         <ul class="socials">
                             <li>
-                                <a href=""></a>
+                                <a class="facebook" href=""><img src="images/fb.png" alt="facebook icon"></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="twitter" href=""><img src="images/tw.png" alt="twitter icon"></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="dribble" href=""><img src="images/dr.png" alt="dribble icn"></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="Be" href=""><img src="images/be.png" alt=""></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="p" href=""><img src="images/pi.png" alt="Pinterest icon"></a>
                             </li>
                         </ul>
                     </div>
@@ -347,32 +356,69 @@
                     <div>
                         <img src="images/team_3.jpg" alt="">
                     </div>
-                    <div>
+                    <div class="team_details">
                         <p class="name">Farhan Al fuad</p>
                         <p class="proffesion">UI/UX Designer</p>
                         <ul class="socials">
                             <li>
-                                <a href=""></a>
+                                <a class="facebook" href=""><img src="images/fb.png" alt=""></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="twitter" href=""><img src="images/tw.png" alt=""></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="dribble" href=""><img src="images/dr.png" alt=""></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="Be" href=""><img src="images/be.png" alt=""></a>
                             </li>
                             <li>
-                                <a href=""></a>
+                                <a class="p" href=""><img src="images/pi.png" alt=""></a>
                             </li>
                         </ul>
                     </div>
                 </li>
             </ul>
+            <ul class="indicators">
+                <li>
+                    <a href=""></a>
+                </li>
+                <li class="active">
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
 
         </div>
-    </div>
+    </section>
+    <section id="fact" class="container">
+        <ul>
+            <li>
+                <div><i class="material-icons">directions_car</i><span>518</span></div>
+                <p>Projects delivered</p>
+            </li>
+            <li>
+                <div><i class="material-icons">public</i><span>177</span></div>
+                <p>Web Design Projects</p>
+            </li>
+            <li>
+                <div><i class="material-icons">access_time</i><span>2465</span></div>
+                <p>Total Hours</p>
+            </li>
+            <li>
+                <div><i class="material-icons">free_breakfast</i><span>2465</span></div>
+                <p>Cup of Coffee</p>
+            </li>
+        </ul>
+    </section>
+    <section id="testimontals">
+        <div class="container">
+            <h2 class="heading_bright">What our clients say</h2>
+            <h3 class="heading_bright">Lorem ipsum dolor sit amet consecte adip scn elit sit secte </h3>
+        </div>
+    </section>
     <script src="js/scripts.min.js"></script>
 </body>
 

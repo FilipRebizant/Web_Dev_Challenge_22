@@ -1,3 +1,5 @@
 $(document).ready(function () {
-    $('.carousel').carousel();
+    $('.burger').click(function(){
+       $(this).toggleClass('active'); 
+    });
 });

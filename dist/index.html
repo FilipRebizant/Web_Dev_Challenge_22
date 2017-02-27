@@ -12,9 +12,13 @@
 <body>
     <div class="minibar">
         <div class="contact">
-            <i class="material-icons">phone</i> 298 844 0398
-            <i class="material-icons">email</i> contact@smily.com
-            </div>
+            <span>
+                <i class="material-icons">phone</i> 298 844 0398
+            </span>
+            <span>
+                <i class="material-icons">email</i> contact@smily.com
+            </span>
+        </div>
         <div class="social_icons">
             <ul>
                 <li class="social_icon">
@@ -36,9 +40,11 @@
         </div>
     </div>
     <header>
-        <img class="logo" src="images/logo.png" alt="smiley_logo">
+        <div class="logo_wrapper">
+            <a href="#"><img class="logo" src="images/logo.png" alt="smiley_logo"></a>
+            <div class="burger"><span></span></div>
+        </div>
         <nav>
-           <div class="burger"><span></span></div>
             <ul>
                 <li class="active"><a href="">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -305,7 +311,7 @@
             <ul>
                 <li class="carousel_item">
                     <div>
-                        <img src="images/team_1.jpg" alt=""></div>
+                        <img src="images/team_1.jpg" alt="picture of a team member" class="team_picture"></div>
                     <div class="team_details">
                         <p class="name">Faridul Haque</p>
                         <p class="proffesion">Graphic Designer</p>
@@ -329,7 +335,7 @@
                     </div>
                 </li>
                 <li class="carousel_item active">
-                    <div><img src="images/team_2.jpg" alt=""></div>
+                    <div><img src="images/team_2.jpg" alt="" class="team_picture"></div>
                     <div class="team_details">
                         <p class="name">Angelina Fuad jolie</p>
                         <p class="proffesion">Fasion Designer</p>
@@ -354,7 +360,7 @@
                 </li>
                 <li class="carousel_item">
                     <div>
-                        <img src="images/team_3.jpg" alt="">
+                        <img src="images/team_3.jpg" alt="" class="team_picture">
                     </div>
                     <div class="team_details">
                         <p class="name">Farhan Al fuad</p>
@@ -417,8 +423,177 @@
         <div class="container">
             <h2 class="heading_bright">What our clients say</h2>
             <h3 class="heading_bright">Lorem ipsum dolor sit amet consecte adip scn elit sit secte </h3>
+
+            <ul class="clients_carousel">
+                <li>
+                    <a href=""><img src="images/client-1.jpg" alt="" class="client"></a>
+
+                </li>
+                <li class="active">
+                    <a href=""><img src="images/client-2.jpg" alt="" class="client"></a>
+                    <div class="client_description">
+                        <p class="client_name">WASTON EMMA</p>
+                        <p class="client_proffesion">CEO</p>
+                    </div>
+                    <p class="testimontal">
+                        <i class="left_arrow icon material-icons">keyboard_arrow_left</i> Primis vocent comprehensam an vix, qui ferri alterum appareat id. Debitis nominati pertinacia ut nam. Te quo fastidii vituperata neglegentur, quidam offendit nec ut. Autem accumsan urbanitas no nam. Et qui eirmod vocent appareat. Tota graeci alterum ea eos, eu sint similiqtur, quidam offendit nec ut. Autem accumsan urbanitas no nam.
+                        <i class="right_arrow icon material-icons">keyboard_arrow_right</i>
+
+                    </p>
+                </li>
+                <li>
+                    <a href=""><img src="images/client-3.jpg" alt="" class="client"></a>
+                </li>
+            </ul>
+
         </div>
     </section>
+    <section id="trusted_us">
+        <div class="container">
+            <i class="left_arrow icon material-icons">keyboard_arrow_left</i>
+            <i class="right_arrow icon material-icons">keyboard_arrow_right</i>
+            <ul>
+
+                <li><img src="images/trusted_1.jpg" alt=""></li>
+                <li><img src="images/trusted_2.jpg" alt=""></li>
+                <li><img src="images/trusted_3.jpg" alt=""></li>
+                <li><img src="images/trusted_4.jpg" alt=""></li>
+                <li><img src="images/trusted_1.jpg" alt=""></li>
+                <!--            <li><img src="trusted_1.jpg" alt=""></li>-->
+
+            </ul>
+
+        </div>
+    </section>
+    <section id="pricing_table">
+        <div class="container">
+            <h2 class="heading_dark">Pricing table</h2>
+            <h3 class="heading_dark">Lorem ipsum dolor sit amet consecte adip scn elit sit secte </h3>
+            <ul class="pricing_list">
+                <li>
+                    <h4 class="heading_dark">Basic</h4>
+                    <h5 class="heading_dark">Suitable for Large Company</h5>
+                    <p class="price">$1099/<span>Month</span></p>
+                    <ul class="services">
+                        <li>2 UNIQUE CONCEPTS</li>
+                        <li>5 REVISIONS</li>
+                        <li>LOGO DESIGN</li>
+                        <li>24/7 CUSTOMER SUPPORT</li>
+                        <li>3-5 BUSINESS DAYS</li>
+                    </ul>
+                    <a href="" class="button">ORDER</a>
+                </li>
+                <li>
+                    <h4 class="heading_dark">Standard</h4>
+                    <h5 class="heading_dark">Suitable for Large Company</h5>
+                    <p class="price">$1499/<span>Month</span></p>
+                    <ul class="services">
+                        <li>2 UNIQUE CONCEPTS</li>
+                        <li>5 REVISIONS</li>
+                        <li>LOGO DESIGN</li>
+                        <li>24/7 CUSTOMER SUPPORT</li>
+                        <li>3-5 BUSINESS DAYS</li>
+                    </ul>
+                    <a href="" class="button">ORDER</a>
+                </li>
+                <li>
+                    <h4 class="heading_dark">Professional</h4>
+                    <h5 class="heading_dark">Suitable for Large Company</h5>
+                    <p class="price">$2099/<span>Month</span></p>
+                    <ul class="services">
+                        <li>2 UNIQUE CONCEPTS</li>
+                        <li>5 REVISIONS</li>
+                        <li>LOGO DESIGN</li>
+                        <li>24/7 CUSTOMER SUPPORT</li>
+                        <li>3-5 BUSINESS DAYS</li>
+                    </ul>
+                    <a href="" class="button">ORDER</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="news" class="container">
+        <h2 class="heading_dark">LATEST NEWS</h2>
+        <h3 class="heading_dark">Lorem ipsum dolor sit amet consecte adip scn elit sit secte</h3>
+
+        <ul class="news_wrapper">
+            <li class="news">
+                <div class="news_thumbnail">
+                    <img src="images/thumb_news.jpg" class="img_responsive" alt="News thumbnail">
+                    <i class="icon arrow_forward material-icons">arrow_forward</i>
+                </div>
+                <div class="news_container">
+
+                    <div class="news_heading">
+                        <p class="primary_heading_dark">Boost your business</p>
+                        <p class="secondary_heading_dark">By Faridul Haque in Tutorial</p>
+                    </div>
+                    <p class="news_overview">Lorem ipsum dolor sit amet, quaerendum, vis soleat similique argumentum in. Vis duo ewi apeirian facilisi quaerendum, vis soleat similique argumentum in. Vis cu labitur reformidans.</p>
+                </div>
+            </li>
+            <li class="news">
+                <div class="news_thumbnail">
+                    <img src="images/thumb_news.jpg" class="img_responsive" alt="News thumbnail">
+                    <i class="icon arrow_forward material-icons">arrow_forward</i>
+                </div>
+                <div class="news_container">
+
+                    <div class="news_heading">
+                        <p class="primary_heading_dark">Boost your business</p>
+                        <p class="secondary_heading_dark">By Faridul Haque in Tutorial</p>
+                    </div>
+                    <p class="news_overview">Lorem ipsum dolor sit amet, quaerendum, vis soleat similique argumentum in. Vis duo ewi apeirian facilisi quaerendum, vis soleat similique argumentum in. Vis cu labitur reformidans.</p>
+                </div>
+            </li>
+            <li class="news">
+                <div class="news_thumbnail">
+                    <img src="images/thumb_news.jpg" class="img_responsive" alt="News thumbnail">
+                    <i class="icon arrow_forward material-icons">arrow_forward</i>
+                </div>
+                <div class="news_container">
+
+                    <div class="news_heading">
+                        <p class="primary_heading_dark">Boost your business</p>
+                        <p class="secondary_heading_dark">By Faridul Haque in Tutorial</p>
+                    </div>
+                    <p class="news_overview">Lorem ipsum dolor sit amet, quaerendum, vis soleat similique argumentum in. Vis duo ewi apeirian facilisi quaerendum, vis soleat similique argumentum in. Vis cu labitur reformidans.</p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <section id="newsletter" class="newsletter">
+        <h2 class="heading_dark">Get latest updates from us</h2>
+        <h3 class="heading_dark">Lorem ipsum dolor sit amet consecte adip scn elit sit secte olor sit amet consecte adip scn e</h3>
+        <form class="newsletter_form">
+            <input placeholder="Your Email*" class="input" type="text">
+            <button class="button">
+                Subscribe <i class="material-icons">cloud_done</i>
+          </button>
+        </form>
+    </section>
+    <footer>
+        <p>©2016 Full Rights Reserved. Created with love by Faridul Haque.
+            <ul class="socials">
+                <li class="social_icon">
+                    <a href=""><img src="images/fb_icon.jpg" alt="facebook"></a>
+                </li>
+                <li class="social_icon">
+                    <a href=""><img src="images/twitter_icon.jpg" alt="twitter"></a>
+                </li>
+                <li class="social_icon">
+                    <a href=""><img src="images/p_icon.jpg" alt="p"></a>
+                </li>
+                <li class="social_icon">
+                    <a href=""><img src="images/googleplus_icon.jpg" alt="google_plus"></a>
+                </li>
+                <li class="social_icon">
+                    <a href=""><img src="images/vimeo_icon.jpg" alt="vimeo"></a>
+                </li>
+            </ul>
+        </p>
+    </footer>
+
     <script src="js/scripts.min.js"></script>
 </body>
 

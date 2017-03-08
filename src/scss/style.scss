@@ -131,13 +131,14 @@ h3 {
     text-align: center;
     a {
         color: #2095f2;
-        padding: 5px 3px;
+        padding: 3px 0 0 0 ;
+        width: 25px;
+        height: 25px;
+        display: block;
         background: #ffffff;
         border-radius: 50%;
         transition: $transition;
-        i {
-            margin: 0 5px;
-        }
+
     }
     a:hover {
         background: #ef5350;
@@ -156,9 +157,6 @@ h3 {
     font-size: 0.8em;
     span {
         display: flex;
-    }
-    i {
-        margin-right: 5px;
     }
     li {
         display: inline-block;
@@ -782,7 +780,7 @@ nav {
         margin: 20px;
         padding: 35px 50px;
         &:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             .button {
                 background: #ef5350;
             }
@@ -831,7 +829,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .news_thumbnail {
@@ -1006,6 +1004,11 @@ footer {
 }
 
 @media all and (min-width: 980px) {
+    
+    .news_wrapper{
+        flex-direction: row;
+    }
+    
     .minibar {
         span {
             display: inline-flex;
@@ -1037,6 +1040,8 @@ footer {
                 width: 1000px;
                 top: 0;
                 height: 200px;
+                left:auto;
+                right:-999px;
             }
         }
     }

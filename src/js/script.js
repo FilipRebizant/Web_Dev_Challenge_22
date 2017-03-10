@@ -37,8 +37,36 @@ $(document).ready(function () {
             }
         });
     });
+    
+    $('a[href="#"], button').click(function(e){
+        e.preventDefault();
+    });
+(function(){
+    
+    var currentSlide = 1;
+    var slides =  $('.trusted_list').find('.trusted_item');
+    console.log(slides);
+    if(currentSlide === $slides.length){
+        $('#trusted_arrow_right').addClass('inactive');
+//        return false;
+    }
+    else{
+        
+        $('#trusted_arrow_right').click(function(){
+            $('.trusted_list').animate({
+                'left': '-=200px'
+            });
+            currentSlide++;
+        });
 
-
+        $('#trusted_arrow_left').click(function(){
+            $('.trusted_list').animate({
+                'left': '+=200px'
+            });
+        });
+    }
+    
+});
 
 
 });

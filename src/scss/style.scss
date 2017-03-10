@@ -1,15 +1,14 @@
-//@import 'normalise.scss';
 @import 'bootstrap.min';
 @import 'materialdesignicons.min';
 $light_blue: #03a9f4;
 $dark-blue:#1976d2;
 $triangle: 14px;
+$triangle-small:8px;
 $transition: 0.2s all ease-in;
 $radius: 3px;
 body {
     color: #333333;
     font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
 }
 
 a {
@@ -363,36 +362,36 @@ nav {
     background: url('../images/skills_bg.jpg') no-repeat;
     background-size: cover;
     width: 100%;
-    height: 530px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     .border {
         background: rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        width: 127px;
-        height: 127px;
+        width: 67px;
+        height: 67px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .play_button {
         background: #f0f0f0;
-        width: 87px;
-        height: 87px;
+        width: 37px;
+        height: 37px;
         border-radius: 50%;
         cursor: pointer;
         position: relative;
         .play {
             position: absolute;
-            top: 30px;
-            left: 40px;
-            border-bottom: $triangle solid transparent;
-            border-top: $triangle solid transparent;
-            border-left: $triangle solid #f95d5a;
+            top: 10px;
+            left: 16px;
+            border-bottom: $triangle-small solid transparent;
+            border-top: $triangle-small solid transparent;
+            border-left: $triangle-small solid #f95d5a;
             width: 0;
             height: 0;
-            border-right: $triangle solid transparent;
+            border-right: $triangle-small solid transparent;
         }
     }
 }
@@ -400,7 +399,6 @@ nav {
 .project {
     margin: auto;
     padding: 15px;
-    width: 33.3%;
     position: relative;
     &:hover .project_details {
         opacity: 1;
@@ -497,8 +495,8 @@ nav {
     width: 33%;
     flex-direction: row;
     div {
-        padding: 15px 0 15px 15px;
-        margin: 15px 0;
+        padding: 10px 0 10px 10px;
+        margin: 5px 0;
     }
 }
 
@@ -517,6 +515,7 @@ nav {
 
 .team_members {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -540,7 +539,7 @@ nav {
 
 .face_wrapper {
     padding: 10%;
-    height: 230px;
+    //    height: 230px;
     margin: 10px 0;
 }
 
@@ -561,7 +560,6 @@ nav {
 .team_socials {
     display: flex;
     transition: $transition;
-    width: 200px;
     justify-content: center;
     margin: 0 auto 20px auto;
     margin: auto;
@@ -569,16 +567,14 @@ nav {
     .social_icon {
         a {
             margin: 0 3px;
-            font-size:16px;
+            font-size: 16px;
             background: transparent;
-            color:#ffffff;
-            &:hover{
-                color:#ef5350;
+            color: #ffffff;
+            &:hover {
+                color: #ef5350;
             }
         }
-        i{
-            
-        }
+        i {}
     }
 }
 
@@ -721,9 +717,11 @@ nav {
     justify-content: center;
     li {
         margin: 0 25px;
+        padding-bottom: 50px;
     }
     li:not(.active) {
-        padding-top: 10px;
+        //        padding-top: 10px;
+        display: none;
     }
     img {
         box-shadow: 0 2px 3px #176dc2;
@@ -744,16 +742,10 @@ nav {
 }
 
 #trusted_us {
-//    width: 20%;
     margin: auto;
-//    display: flex;
-//    justify-content: space-around;
-//    height: 150px;
-//    overflow: hidden;
     .left_arrow,
     .right_arrow {
         background: $light-blue;
-        //        position: relative;
         z-index: 5;
         &:hover {
             background: #ef5350;
@@ -762,6 +754,7 @@ nav {
     background: #f5f5f5;
     padding:50px;
     i {
+        display: none;
         padding-left: 5px;
         color: #ffffff;
         box-shadow: 0 2px 3px #d5d5d5;
@@ -771,18 +764,16 @@ nav {
 .trusted_list {
     flex-wrap: wrap;
     display: flex;
-//    position: relative;
-//    left: 0;
     justify-content: space-around;
 }
 
 .trusted_item {
     margin: 10px auto;
-//    width: 200px;
+    //    width: 200px;
 }
 
 #pricing_table {
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     h4 {
         text-transform: uppercase;
@@ -800,7 +791,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     &>li {
-        width: 60%;
+//        width: 60%;
         position: relative;
         transition: $transition;
         box-shadow: 0 1px 4px #e8e8e8;
@@ -864,7 +855,7 @@ nav {
 }
 
 .news {
-    width: 70%;
+    width: 90%;
     margin: 15px auto;
     box-shadow: 0 2px 3px #d5d5d5;
 }
@@ -931,14 +922,14 @@ input:focus {
 }
 
 footer {
-    padding: 70px 0;
+    padding: 25px 0;
     background: $dark-blue;
     color: #ffffff;
     text-align: center;
     .socials {
         display: flex;
         justify-content: center;
-        margin: 30px 0;
+        margin: 15px 0;
     }
     .social_icon {
         margin: 0 5px;
@@ -948,6 +939,15 @@ footer {
 }
 
 @media all and (max-width: 720px) {
+    .input{
+        margin-bottom: 30px;
+    }
+    .newsletter{
+        padding: 50px 15px;
+    }
+    #news{
+        padding-bottom: 30px;
+    }
     .hero {
         font-size: 0.7em;
         padding-top: 70px;
@@ -961,27 +961,23 @@ footer {
         }
     }
     .team_members {
-        flex-direction: column;
-        width: 80%;
+        flex-direction: row;
         margin: auto;
+    }
 
-    }
-    .project {
-        width: 50%;
-    }
 }
 
 @media all and(min-width:599px) {
+     .project {
+        width: 50%;
+    }
     .service {
         width: 33%;
         height: 150px;
     }
 }
 
-@media all and (max-width: 539px)
-/*539px*/
-
-{
+@media all and (max-width: 539px) {
     .input {
         width: 230px;
     }
@@ -1007,15 +1003,18 @@ footer {
             margin: 0 0 40px 0;
         }
     }
-    .project {
-        width: 100%;
-    }
+
 }
 
-
 @media all and (min-width:540px) and (max-width: 979px) {
-
-    .carousel_item{
+    .clients_carousel li:not(.active){
+        display: block;
+        padding-top: 10px;
+    }
+     #testimontals{
+        padding: 50px 0 230px 0;
+    }
+    .carousel_item {
         margin: 10px;
     }
     .testimontal {
@@ -1025,8 +1024,8 @@ footer {
         margin-top: 60px;
         flex-direction: row;
         &>li {
-            width: 40%;
-            margin: 20px;
+            width: 45%;
+            margin: 10px;
         }
     }
     .news_wrapper {
@@ -1034,7 +1033,6 @@ footer {
     }
     .news {
         width: 45%;
-        margin: 15px;
     }
     .single_offer {
         width: 50%;
@@ -1048,23 +1046,103 @@ footer {
 }
 
 @media all and(min-width:400px) and (max-width:774px) {
-    .face_wrapper {
-        height: 60%;
+    .team_picture{
+        margin: auto;
+        max-width: 80%; 
     }
-    .carousel_item{
+    .carousel_item {
         margin: 10px auto;
+        width:45%;
     }
-    
+    .face_wrapper{
+        margin: 0;
+    }
 
 }
-@media all and (orientation: landscape) {
+
+@media (max-width: 600px) and (orientation: landscape) {
     .hero {
         height: 80vh;
+    }
+    .project{
+        width: 50%;
     }
 }
 
 @media all and (min-width: 980px) {
-    .face_wrapper{
+    .project{
+        width: 33%;
+    }
+    
+.single_offer {
+
+    div {
+        padding: 15px 0 15px 15px;
+        margin: 15px 0;
+    }
+}
+    
+    footer{
+        padding: 60px 0;
+        .socials{
+            margin: 30px 0;
+        }
+    }
+    #pricing_table {
+        padding: 100px 0;
+    }
+    
+    #trusted_us i{
+        display: block;
+    }
+    .clients_carousel {
+        li{
+            padding-bottom: 0;
+        }
+        li:not(.active) {
+            padding-top: 10px;
+            display: block;
+        }
+    }
+    .team_socials {
+        width: 200px;
+    }
+    .face-wrapper {
+        height: 230px;
+    }
+    #skills {
+        background-size: cover;
+        width: 100%;
+        height: 530px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .border {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            width: 127px;
+            height: 127px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .play_button {
+            width: 87px;
+            height: 87px;
+            .play {
+                position: absolute;
+                top: 30px;
+                left: 40px;
+                border-bottom: $triangle solid transparent;
+                border-top: $triangle solid transparent;
+                border-left: $triangle solid #f95d5a;
+                width: 0;
+                height: 0;
+                border-right: $triangle solid transparent;
+            }
+        }
+    }
+    .face_wrapper {
         margin: 0;
     }
     .carousel_item:not(.active) {
